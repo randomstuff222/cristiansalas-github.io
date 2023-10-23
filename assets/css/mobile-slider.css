@@ -64,19 +64,9 @@
   top: 45%;
   right: 5%;
 }
-.mobile-icon-next:hover {
-  background-color: gray;
-  transform: scale(1.3);
-  opacity: 0.5;
-}
 .mobile-icon-prev {
   top: 45%;
   left: 5%;
-}
-.mobile-icon-prev:hover {
-  background-color: gray;
-  transform: scale(1.3);
-  opacity: 0.5;
 }
 .mobile-btn {
   position: absolute;

@@ -1,6 +1,9 @@
 const slides = document.querySelectorAll('.mobile-slide');
 const nextSlide = document.querySelector('.mobile-btn-next');
 const prevSlide = document.querySelector('.mobile-btn-prev');
+
+// const rightIcon = document.querySelector('mobile-right-icon');
+// const prevIcon = document.querySelector('mobile-left-icon');
 var intervalLoad;
 var timer;
 
