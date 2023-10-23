@@ -20,6 +20,36 @@
 .cd-words-wrapper b.is-visible {
   position: relative;
 }
+@media only screen and (max-width: 855px) {
+  .cd-words-wrapper b {
+    display: inline-block;
+    position: absolute;
+    white-space: nowrap;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 855px) {
+  .cd-words-wrapper b {
+    display: inline-block;
+    position: absolute;
+    white-space: nowrap;
+    left: 0;
+    top: 0;
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .cd-words-wrapper b {
+    display: inline-block;
+    position: absolute;
+    white-space: nowrap;
+    left: 0;
+    top: 0;
+    font-size: 30px;
+  }
+}
 
 .cd-headline.clip span {
   display: inline-block;

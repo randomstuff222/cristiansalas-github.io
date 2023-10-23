@@ -1,0 +1,172 @@
+#mobile-slider-projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 55vh;
+}
+@media only screen and (min-width: 600px) {
+  #mobile-slider-projects {
+    display: none;
+  }
+}
+.mobile-slider-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  overflow: hidden;
+
+  max-width: 900px;
+  width: calc(100% - 100px);
+
+  height: 400px;
+}
+
+.mobile-slider {
+  width: 100%;
+  max-width: 800px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mobile-slide {
+  width: 100%;
+  max-width: 800px;
+  height: 350px;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.mobile-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mobile-btn-icon {
+  display: flex;
+  flex-direction: column-reverse;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+}
+.mobile-icon-next {
+  top: 45%;
+  right: 5%;
+}
+.mobile-icon-next:hover {
+  background-color: gray;
+  transform: scale(1.3);
+  opacity: 0.5;
+}
+.mobile-icon-prev {
+  top: 45%;
+  left: 5%;
+}
+.mobile-icon-prev:hover {
+  background-color: gray;
+  transform: scale(1.3);
+  opacity: 0.5;
+}
+.mobile-btn {
+  position: absolute;
+  height: 40px;
+  border: none;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 18px;
+  height: 100%;
+  width: 30%;
+  opacity: 1;
+}
+
+.mobile-btn-icon:active {
+  transform: scale(1.1);
+}
+
+.mobile-btn-prev {
+  /* top: 45%; */
+  left: 0%;
+}
+
+.mobile-btn-next {
+  /* top: 45%; */
+  right: 0%;
+}
+
+.mobile-background-shadow {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+
+  height: 90px;
+
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  background-color: black;
+  opacity: 0.5;
+}
+
+.mobile-label {
+  bottom: 7%;
+  left: 5%;
+  display: flex;
+  position: absolute;
+  right: 0px;
+
+  height: 40px;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+
+  .mobile-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 40px;
+    max-width: 40px;
+    height: 40px;
+    border-radius: 100%;
+
+    background-color: white;
+  }
+
+  .mobile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-left: 10px;
+
+    color: white;
+
+    white-space: pre;
+
+    > div {
+      position: relative;
+
+      transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95),
+        opacity 0.5s ease-out;
+    }
+
+    .mobile-main {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .mobile-sub {
+      transition-delay: 0.1s;
+    }
+  }
+}

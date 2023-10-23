@@ -16,15 +16,17 @@
   <link rel="stylesheet" href="assets/css/projects.css">
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="stylesheet" href="assets/css/slider.css">
+  <link rel="stylesheet" href="assets/css/mobile-slider.css">
 </head>
 
-<body class="html-body" style="display: inline;overflow: auto;">
+<body class="html-body" style="display: inline;overflow: auto;position: relative;">
   <header class="d-xl-flex justify-content-xl-center" style="height: 10vh;">
     <nav class="navbar navbar-dark navbar-expand-md sticky-top" style="border-bottom-style: none;">
       <div class="container-fluid"><a class="navbar-brand" href="#">Cristian Salas</a><button data-bs-toggle="collapse"
           class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span
             class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navcol-1" style="border-bottom: 1px solid rgb(84,90,96);">
+        <div class="collapse navbar-collapse" id="navcol-1"
+          style="border-bottom: 1px solid rgb(84,90,96); background-color:var(--bg-color);">
           <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="About.html">About me</a></li>
@@ -37,16 +39,18 @@
     </nav>
   </header>
   <main style="height: 100%;width: 100%;overflow: hidden;">
-    <div class="container">
-      <div class="row d-xl-flex justify-content-xl-center align-items-xl-center" style="height: 55vh;">
+    <div>
+      <div class="row d-xl-flex justify-content-xl-center align-items-xl-center" style="height: 30vh;">
         <div class="caption v-middle text-center">
           <h1 class="cd-headline clip">
-            <span class="blc">Cristian Salas | </span>
-            <span class="cd-words-wrapper">
-              <b class="is-visible">Software Engineer.</b>
-              <b>FrontEnd Engineer.</b>
-              <b>Full-Stack Engineer.</b>
-            </span>
+            <span id="name" class="blc">Cristian Salas | </span>
+            <div>
+              <span class="cd-words-wrapper">
+                <b class="is-visible">Software Engineer.</b>
+                <b>FrontEnd Engineer.</b>
+                <b>Full-Stack Engineer.</b>
+              </span>
+            </div>
           </h1>
         </div>
       </div>
@@ -112,7 +116,68 @@
         </div>
 
       </div>
-      <div class="row" style="display: inline-block; position: fixed; left: 1%; top: 5%;">
+      <div id="mobile-slider-projects">
+
+        <div class="mobile-slider-container">
+          <div class="mobile-slider" style="position: relative;">
+
+            <div class="mobile-slide">
+              <img src="https://source.unsplash.com/random?landscape,mountain" alt="" />
+              <div class="shadow mobile-background-shadow "></div>
+              <div class="mobile-label">
+                <div class="mobile-icon">
+                  <i class="fas fa-sun"></i>
+                </div>
+                <div class="mobile-info">
+                  <div class="mobile-main">Mimesis</div>
+                  <div class="mobile-sub">Phone App Sign Language</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mobile-slide">
+              <img src="https://source.unsplash.com/random?landscape,cars" alt="" />
+              <div class="shadow mobile-background-shadow "></div>
+              <div class="mobile-label">
+                <div class="mobile-icon">
+                  <i class="fas fa-sun"></i>
+                </div>
+                <div class="mobile-info">
+                  <div class="mobile-main">ML Op</div>
+                  <div class="mobile-sub">Email Spam Detection</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mobile-slide">
+              <img src="https://source.unsplash.com/random?landscape,night" alt="" />
+              <div class="shadow mobile-background-shadow "></div>
+              <div class="mobile-label">
+                <div class="mobile-icon">
+                  <i class="fas fa-sun"></i>
+                </div>
+                <div class="mobile-info">
+                  <div class="mobile-main">Live Chat Music</div>
+                  <div class="mobile-sub">AI Chat Music Room</div>
+                </div>
+              </div>
+            </div>
+
+            <button class="mobile-btn mobile-btn-next">
+              <div class="mobile-btn-icon mobile-icon-next"><i class="fas fa-solid fa-arrow-right"
+                  style="color: #000000;"></i></div>
+            </button>
+            <button class="mobile-btn mobile-btn-prev">
+              <div class="mobile-btn-icon mobile-icon-prev"><i class="fas fa-solid fa-arrow-left"
+                  style="color: #000000;"></i>
+              </div>
+            </button>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-home-bouncer row">
         <div class="col d-xl-flex justify-content-xl-center" id="about-me" style="margin-bottom: 5vh;">
           <div id="cards" style="display: flex; flex-direction: column;gap: 10px;">
             <a href="#skills">
@@ -357,13 +422,13 @@
           </div>
           <div id="blob"></div>
   </main>
-  <footer id="footer" style="overflow: clip; height: 70px; padding: 15px 200px; position: relative;">
-    <div style="position: absolute; display: flex; flex-direction: row-reverse; right: 5%; bottom: 30%;">
+  <footer id="footer" style="overflow: clip; height: 70px; padding: 0 0 100px; position: relative;margin-top: 5%">
+    <div style="position: absolute; display: flex; flex-direction: row-reverse; right: 5%; bottom: 65%;">
       <span id="bouncing-arrow">
       </span>
     </div>
     <div class="text-center"
-      style="text-align: center; display: flex; justify-content: space-between; overflow: auto; margin: 0 auto; width: 100%;">
+      style="text-align: center; display: flex; justify-content: space-between; overflow: auto; margin: 0 auto; width: 70%;">
       <span class="left sub"><b>Cristian Salas &copy; 2023</b></span>
       <span class="right links" style="justify-content: space-between;">
         <a target="_blank" href="https://www.linkedin.com/in/crodriguezsalas/"><i class="fa fa-linkedin fa-2x"
@@ -385,6 +450,7 @@
   <script src="assets/js/contact-animation.js"></script>
   <script src="assets/js/slide-animation.js"></script>
   <script src="assets/js/sidebar-card-animation.js"></script>
+  <script src="assets/js/mobile-slider.js"></script>
 </body>
 
 </html>
