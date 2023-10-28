@@ -101,6 +101,26 @@ a {
   }
 }
 
+.titleUnderline {
+  height: 60px;
+  position: relative;
+  z-index: 1;
+  padding: 20px 0px;
+}
+
+.titleUnderline:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 15px;
+  width: 70%;
+  border-bottom: 1px solid rgb(84, 90, 96);
+}
+
+.experienceEntry {
+  margin-bottom: 60px;
+}
+
 :root {
   --purple: #c600e3;
   --bg-color: #101010;
